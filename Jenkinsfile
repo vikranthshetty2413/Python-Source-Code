@@ -2,7 +2,7 @@ node {
     def app
 
     stage('Clone Repository') {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/vikranthshetty2413/Python-Source-Code.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: 'main']], doGenerateSubmoduleConfigurations: false, extensions: [[$class: 'CleanBeforeCheckout']], userRemoteConfigs: [[url: 'https://github.com/vikranthshetty2413/Python-Source-Code.git']]])
     }
 
     stage('Build Image') {
