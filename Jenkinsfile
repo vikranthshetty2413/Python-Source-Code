@@ -40,3 +40,6 @@ node {
                 build job: 'updatemanifest', parameters: [string(name: 'DOCKERTAG', value: env.BUILD_NUMBER)]
         }
 }
+
+    
+}   
