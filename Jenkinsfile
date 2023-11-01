@@ -10,7 +10,7 @@ node {
     }
 
     stage('Build Image') {
-        app = docker.build("vikranthshetty2413/packages")
+        app = docker.build("https://github.com/vikranthshetty2413/Python-Source-Code/blob/main/Dockerfile")
     }
 
     stage('Test Image') {
