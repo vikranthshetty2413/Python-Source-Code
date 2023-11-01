@@ -7,10 +7,17 @@ node {
         checkout scm
     }
 
+    stage('Build') {
+            steps {
+                sh 'mvn clean install'
+            }
+        }
+
     stage('Build Image') {
-  
-       app = docker.build("vikranthshetty2413/packages")
-    }
+            steps {
+                sh 'docker build -t vikranth-${app} .'
+            }
+        }
 
     stage('Test Image') {
   
