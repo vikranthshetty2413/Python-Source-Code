@@ -1,11 +1,12 @@
 node {
     def app
 
-    stage('Clone Repository') {
-      
-
-        checkout scm
-    }
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/waseemshaik1993/spring-hello-app.git'
+            }
+        }
 
     stage('Build') {
             steps {
