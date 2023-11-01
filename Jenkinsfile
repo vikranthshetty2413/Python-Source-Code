@@ -10,7 +10,7 @@ node {
     }
 
     stage('Build Image') {
-        app = docker.build("vikranthshetty2413/packages")
+        app = docker.build("vikranthshetty2413/packages:v123")
     }
 
     stage('Test Image') {
