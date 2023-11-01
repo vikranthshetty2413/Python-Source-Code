@@ -4,7 +4,7 @@ node {
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/waseemshaik1993/spring-hello-app.git'
+                git 'https://github.com/vikranthshetty2413/Python-Source-Code.git'
             }
         }
 
