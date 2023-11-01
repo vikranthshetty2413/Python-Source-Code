@@ -9,7 +9,7 @@ node {
 
     stage('Build Image') {
   
-       app = docker.build("vikranthshetty2413/Python-Source-Code")
+       app = docker.build("vikranthshetty2413/packages")
     }
 
     stage('Test Image') {
